@@ -1,0 +1,18 @@
+1. cat/gc/type : Gets the contents of a file.
+2. cls/clear : Clears the command line window screen.
+3. ls/dir : Gets the files and folders in a file system drive.
+4. man : Displays information about Windows PowerShell commands and concepts.
+5. ghy/h/history : Gets a list of the commands entered during the current session.
+6. clhy : Deletes entries from the command history.
+7. gl/pwd : Gets information about the current working location or a location stack.
+8. sl/cd/chdir : Sets the current working location to a specified location.
+9. mkdir/ni : Creates a new directory.
+10. rmdir/ri/rm/del/erase/rd : Deletes specified files and folders.
+11. rni/ren : Renames an item in a Windows PowerShell provider namespace.
+12. cpi/cp/copy : Copies an item from one location to another.
+13. mi/mv/move : Moves an item from one location to another.
+14. diff/compare : Compares two sets of objects.
+15. gcm : Gets all commands.
+16. kill : Stops one or more running processes.
+17. ps/gps : Gets the processes that are running on the local computer or a remote computer.
+18. whoami : Gets current username
