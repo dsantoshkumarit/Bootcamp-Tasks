@@ -1,0 +1,10 @@
+1. Copy by value of composite data types:
+https://dsantoshkumarit.medium.com/how-to-do-copy-by-value-of-a-composite-data-type-in-javascript-631a5cce4421
+2. Differences between HTTP1.1 and HTTP2: 
+https://dsantoshkumarit.medium.com/difference-between-http1-1-vs-http2-b5968a3a1a07
+3. why there is a difference in behavior for copying contents in primitive and non primitive type?: 
+https://dsantoshkumarit.medium.com/why-there-is-a-difference-in-behavior-for-copying-contents-in-primitive-and-non-primitive-type-68f6812dc9a
+4. Objects and its internal representation in Javascript: 
+https://medium.com/@dsantoshkumarit/javascript-objects-and-its-internal-representation-5a17c6a4f582
+5. Difference between window, screen, and document in JavaScript : 
+https://medium.com/@dsantoshkumarit/difference-between-window-screen-and-document-in-javascript-56bf123dd9e2
