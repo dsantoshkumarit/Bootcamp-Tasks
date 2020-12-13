@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <title>Assignements</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            function thanks()
+            {
+                alert('Thank You');
+            }
+        </script>
+        <div class='container'>
+            <div class='row navlink'>
+                <div class='col-4'>
+                    
+                </div>
+            
+                <div class='col-4'>
+                    <a href="#">Task 1</a> / 
+                    <a href="page2.html">Task 2</a> / 
+                    <a href="page3.html">Task 3</a>
+                </div>
+            
+                <div class='col-4'>
+                    
+                </div>
+            </div>
+
+            <form onsubmit="thanks()">
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='fnm'>
+                            Full Name
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                                                
+                            <i class="fa fa-user icon" aria-hidden="true" ></i>                                     
+                            <input type='text' placeholder="Full Name" id='fnm' required>                                                                            
+                    </div>
+                </div>             
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='addr1'>
+                            Address Line 1
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-address-card" aria-hidden="true" ></i>    
+                        <input type='text' placeholder="Address Line 1" id='addr1' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='addr2'>
+                            Address Line 2
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-address-card" aria-hidden="true" ></i>                                                       
+                        <input type='text' placeholder="Address Line 2" id='addr2' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='city'>
+                            City
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <input type='text' placeholder="City"  id='city' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='state'>
+                            State/Province/Region
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>                                             
+                            <input type='text' placeholder="State/Province/Region" id='state' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='zip'>
+                            Postal Code/ZIP
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-envelope-open" aria-hidden="true"></i>                                              
+                        <input type='text' placeholder="Postal Code/ZIP" id='zip' pattern="[1-9][0-9]{5}" title='Must contain 6 digits' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='country'>
+                            Country
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-map" aria-hidden="true"></i>                                                      
+                        <select name="country" id="country" required>
+                            <option disabled>Please Select</option>
+                            <option>Afghanistan</option>
+                            <option>Albania</option>
+                            <option>Bahamas</option>
+                            <option>Belgium</option>
+                            <option>Chile</option>
+                            <option>Columbia</option>
+                            <option>India</option>
+                            <option>Iceland</option>
+                          </select>                                                 
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='email'>
+                            Email
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-envelope" aria-hidden="true"></i>                                                  
+                        <input type='email' id='email' placeholder="Email" required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'>
+                    <div class='col-6'>
+                        <Label for='phno'>
+                            Phone Number
+                        </Label>
+                    </div>
+    
+                    <div class='col-6'>                                                    
+                        <i class="fa fa-phone" aria-hidden="true"></i>                                         
+                        <input type='text' if='phno' placeholder="Phone Number" pattern="[789][0-9]{9}" title='Must contain 10 digits' required>                                                  
+                    </div>
+                </div> 
+
+                <div class='row'> 
+                    <div class='col-5'> 
+
+                    </div>   
+                    <div class='col-2'>                                                                                                                   
+                    <input type='submit'>                                                  
+                    </div>
+                    <div class='col-5'> 
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+        
+    </body>
+</html>

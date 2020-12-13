@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+[class*="col-"] 
+{
+    width: 100%;
+    
+    float: left;
+}
+
+label
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-icons
+{    
+        position: relative;
+        width:10%;
+}
+
+.container
+{
+ width:80%;
+ margin:auto;
+ background-color: rgb(226, 222, 222);
+ padding:5px;
+ border-radius: 10px;
+}
+  
+
+
+@media only screen and (max-width: 768px) {
+   
+    [class*="col-"] 
+    {
+        width: 100%;
+        text-align: center;
+        float: left;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .col-m-1 {width: 6%;}
+    .col-m-2 {width: 14.26%;}
+    .col-m-3 {width: 21.42%;}
+    .col-m-4 {width: 29%;}
+    .col-m-5 {width: 35.71%;}
+    .col-m-6 {width: 42.85%;}
+    .col-m-7 {width: 50%;}
+    .col-m-8 {width: 57.14%;}
+    .col-m-9 {width: 64.28%;}
+    .col-m-10 {width: 71.42%;}
+    .col-m-11 {width: 78.57%;}
+    .col-m-12 {width: 85.71%;}
+    .col-m-13 {width: 92.85%;}
+    .col-m-14 {width: 100%;}
+  
+  }
+
+
+[class*="col-"] 
+{
+    float: left;
+    padding: 10px;
+   
+}
+
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  
+input,select
+{
+    border:none;    
+    width:90%;
+    height:5vh;
+}
+
+i
+{
+  width:5%;
+  
+}
+
+.success
+{
+  background-color: #4caf50;
+  font-size: 2vmax;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.success-sm
+{
+  background-color: #4caf50;
+  font-size: 1.5vmax;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.primarybtn
+{
+  background-color: #008CBA;
+  font-size: 2vmax;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.nostylebtn
+{
+  background-color: whitesmoke;
+  font-size: 2vmax;
+  color: #008CBA;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+h4
+{
+  color:#666666;
+  font-family: 'Andika New Basic', sans-serif;
+  
+}
+
+p
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2vmax;
+}
+
+#p-small
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5vmax;
+}
+
+#p-small1
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+
+h3
+{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2vmax;
+}
+
+h1
+{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 5vmax;
+}
+
+img
+{
+  width: 100%;
+  height: auto;
+}
+
+
+.border
+{
+  border: 1px groove;
+} 
+
+.nopad
+{
+  padding:0;
+}
+
+.navlink
+{
+  background-color:#e4e4e4;
+  border-radius: 10px;
+}
