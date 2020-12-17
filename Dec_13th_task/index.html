@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+  </head>
+  <body>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <div class="container-fluid no-gutters">
+        <div class='row'>
+            <div class='col-12 text-center'>                
+                <h1>
+                    Calculator
+                </h1>
+            </div>
+        </div>
+       
+        
+        <div class='row'>
+            <div class='col-4'>
+
+            </div>
+            <div class='col-4 text-center'>
+                <div class='row p-3 rounded shadow1' id='gradrow'>
+                                       
+        
+                    <div class='col-12'>                
+        
+                        <div class='row'>
+                            <div class='col-12 text-center'>                                
+                                <textarea id='inpt' rows=3 class='rounded' onkeyup='checkkeypress(event)' autofocus></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class='row p-2'>                    
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-primary' onclick='memclear()'>
+                                    MC
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-info' onclick='memminus()'>
+                                    M-
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-info' onclick='memadd()'>
+                                    M+
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-danger' id='allclear'>
+                                    AC
+                                </button>
+                            </div>                                    
+                        </div>
+        
+                        <div class='row p-2 '>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='7' onclick="numoper(this)">
+                                    7
+                                </button>
+                            </div>
+                            <div class='col-3 text-center' >
+                                <button class='btn btn-outline-light' value='8' onclick="numoper(this)">
+                                    8
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='9' onclick="numoper(this)">
+                                    9
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-warning" value='%' onclick="mod()">
+                                    %
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class='row p-2 '>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='4' onclick="numoper(this)">
+                                    4
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='5' onclick="numoper(this)">
+                                    5
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='6' onclick="numoper(this)">
+                                    6
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-warning" value='/' onclick="division()">
+                                    /
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class='row p-2 '>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='1' onclick="numoper(this)">
+                                    1
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='2' onclick="numoper(this)">
+                                    2
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='3' onclick="numoper(this)">
+                                    3
+                                </button>
+                            </div>
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-warning" value='*' onclick="product()">
+                                    X
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class='row p-2'>
+                            <div class='col-3 text-center'>
+                                
+                            </div>   
+                            <div class='col-3 text-center'>
+                                <button class='btn btn-outline-light' value='0' onclick="numoper(this)">
+                                    0
+                                </button>
+                            </div>           
+                            <div class='col-3 text-center'>                                
+                            </div>                                                                                  
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-warning" value='-' onclick="minus()">
+                                    -
+                                </button>
+                            </div>         
+                        </div>
+
+                        <div class='row p-2'>
+                            <div class='col-6 text-center'>
+                                <button class='btn btn-primary' value='0' id='eval' >
+                                    Eval Expr
+                                </button>
+                            </div>           
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-success" value='=' id='equate' onclick="equate()">
+                                    =
+                                </button>
+                            </div>                                               
+                            <div class='col-3 text-center'>
+                                <button class="btn btn-outline-warning" value='+' onclick="add()">
+                                    +
+                                </button>
+                            </div>         
+                        </div>
+        
+                    </div>                           
+        
+                </div>
+            </div>
+            <div class='col-4'>
+                <div id='testdiv'>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='myscript.js'>        
+
+    </script>
+
+  </body>
+</html>
