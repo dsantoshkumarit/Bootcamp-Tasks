@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+pre {
+  color: rgb(241, 184, 24);
+}

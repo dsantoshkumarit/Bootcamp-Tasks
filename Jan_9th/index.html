@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script defer src='movie.js'></script>
+        
+        <header>
+            <h1>This is a Practice Page for class in TypeScript</h1>
+        </header>
+        <br/>
+        <section>
+            <h3>
+                The below is Movie class structure:
+            </h3>
+            <pre>
+                class Movie{
+                    title:string;
+                    studio:string;
+                    rating:string;
+                
+                    constructor(movienm:string, studio:string,rating:string='PG')
+                    {
+                        this.title=movienm;
+                        this.studio=studio;
+                        this.rating=rating;
+                    }
+                
+                    getPG(moviesarr:Array<Movie>):Array<Movie>{
+                        let pgMovies:Array<Movie>=[];
+                        moviesarr.forEach(movie=>{
+                            if(movie.rating==='PG')
+                                pgMovies.push(movie);
+                        })
+                        return pgMovies;
+                    }
+                }                
+            </pre>
+        </section>
+        <section>
+            <h3>
+                The class instances created have the values as below:
+            </h3>
+            <pre class='input-data'>
+
+            </pre>
+        </section>
+        <section>
+            <h3>
+                The classes that have PG rating as "PG" are:
+            </h3>
+            <pre class='output-data'></pre>
+        </section>
+</body>
+</html>
