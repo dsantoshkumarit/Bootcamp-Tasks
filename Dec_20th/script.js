@@ -2,7 +2,7 @@
 function checkweather(btn)
 {
     let latlng=btn.value.split(',').map(str=>str.trim());    
-    let apik='caab7bb0c218a616d23a3e65483601f0';
+    let apik=process.env.Weatherapi_key;
     fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latlng[0]+'&lon='+latlng[1]+'&appid='+apik)   
     .then((resp)=>{
         return resp.json();
